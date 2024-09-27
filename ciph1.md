@@ -15,7 +15,7 @@ secret key is used for decryption. Also the decryption process is inverse of
 encrytion process.
 
 <p align="center">
-<img src=/home/tathagato/classes/2024_25/DSE1/pic1.jpeg
+<img src=pic1.jpeg
 alt="Smplified Model of symmetric ciphering">
 </p>
 
@@ -26,7 +26,7 @@ algorithm, $Y$ be the ciphertext. Then $Y = E(K,X)$.
 Decryption : $X=E^{-1}(K,Y)$ 
 
 <p align="center">
-<img src=/home/tathagato/classes/2024_25/DSE1/pic2.jpeg
+<img src=pic2.jpeg
 alt="Cryptosystem model">
 </p>
 
@@ -179,7 +179,7 @@ Polyalphabetic ciphers provide better protection against replay attacks using co
 This is the simplest polyalphabetic ciphering technique and very easy to implement. This method is based on arranging the letters of the alphabet in a matrix and  calculate row-column numbers of the replacement letter in ciphertext based on the cipherkey and plaintext. The matrix is called Vigenere matrix which is shown below.
 
 <p align="center">
-<img src=/home/tathagato/classes/2024_25/DSE1/vigenere_table.jpeg
+<img src=vigenere_table.jpeg
 alt="vigenere_table">
 </p>
 
