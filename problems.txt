@@ -1,0 +1,24 @@
+Change the base code for ciph1.c and deciph1.c to implement the following on text files with 
+- all english uppercase and lowercase letters,
+- numerics,
+- and printable charaters including '`', '`', '\b', '\t', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '-', '_', '+', '=', ',', '.', 
+  '?', '/', '\', ',' '{', '[','}',']',':', ';', '"', ''', '<', '>', '?'.
+
+1. Implement a Caesar cipher on a text file including all english alphabets (upercase and lowercase), and numbers. ASCII values or any other indexing can be used. 
+The K value would take a random sequence of values 11,7,13,3,11,17,3,19,5 after each character in a rotating version. Implement the deciphering. Also, write a 
+brute-force code to break the ciphertext where the attacker knows the ciphertext, the fact that K values are prime numbers between 3 and 19, and they change randomly after each character with a periodicity of 10. 
+calculate the time to generate all possible plaintexts using brute force.
+
+2. Implement a playfair cipher and decipher with 10X10 matrix with the key "A quick brown fox LEAPS OVER a BLUE Well". Write a possible algorithm and the code 
+(if possible) to break the ciphertext with the knowledge of the length of cipherkey.
+
+3. Implement Hill cipher and decipher modules with a 8X8 square matrix. The matrix elements should be set according to a random number sequence between 11 and 197
+without repetition. Write an algorithm and the code (if possible) to break the ciphertext with the knowledge that the matrix is 8X8 and the value range is between 1
+to 250.
+
+4. Implement affine cipher and decipher modules where modulo = 128, C = (C + 4)mod 128 after each character and A changes to the next bigger prime number starting
+from 113 after every 20 characters.
+
+5. Implement the Vignere cipher and decipher with the same key as problem number 2.
+
+6. Implement a three-stage rotor machine cipher where the mapping are generated through 3 different sets of non-repeating random numbers between 30 - 127.
