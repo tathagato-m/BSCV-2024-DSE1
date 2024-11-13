@@ -146,7 +146,7 @@ on, ending with the $48_{th}$ bit of $K_n$ being the $32^{th}$ bit of $C_nD_n$.
 
 ##### Feistel block
 
-Input to the Feistel block of $n^{th}$ stage are $L_{n-1},~R_{n-1}~and~K_n$.  Outputs are $L_n$ and $R_n$, which are both 32-bit numbers.  
+Input to the Feistel block of $n^{th}$ stage are $L_{n-1}$, $R_{n-1}$ and $K_n$.  Outputs are $L_n$ and $R_n$, which are both 32-bit numbers.  
 $L_n = R_{n-1}$, and $R_n = L_{n-1} \oplus f(K_{n}, R_{n-1})$.
 
 The function $f$ has two stages. In the first stage, 32-bit $R_{n-1}$ is permuted to be a 48-bit number, which is XOR'ed with $K_n$, and then each 6-bit of the XOR'ed value is used to perform a lookup into a table called S-Box to get a 4-bit output. There are 8 S-boxes to get a total of 32-bit output.
