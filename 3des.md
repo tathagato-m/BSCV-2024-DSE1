@@ -166,10 +166,8 @@ $$
 \end{matrix}
 $$
 
-Each S-box is a 4X16 matrix. 
-
-Let <br />
-$R^*_{n}$ denote the permuted $R_n$, and <br />
+Each S-box is a 4X16 matrix. Let <br />
+$R^*_n$ denote the permuted $R_n$, and <br />
 $Y_n$ denote $R^*_n \oplus K_n$. <br /> 
 For each 6-bit of $Y_n$, the first and last bit taken togther determines the row index (between 0 - 3) and the other 4 bits determine the column index (between 0 - 15). Each element of S-box is a 4-bit value (between 0 - 15). Hence, the 48-bit $Y_n$ is converted to 8 6-bit values, which are used to index 8 S-box matrices to get 8 4-bit values. Hence the output of the S-box lookup is a 32-bit number. The S-box matrices are as given in the following figures.
 
