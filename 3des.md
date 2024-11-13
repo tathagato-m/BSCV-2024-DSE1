@@ -167,8 +167,8 @@ $$
 $$
 
 Each S-box is a 4X16 matrix. Let <br />
-$R^*$ denote the permuted $R_n$, and <br />
-$Y_n$ denote $R^* \oplus K_n$. <br /> 
+$R^1_n$ denote the permuted $R_n$, and <br />
+$Y_n$ denote $R^1 \oplus K_n$. <br /> 
 For each 6-bit of $Y_n$, the first and last bit taken togther determines the row index (between 0 - 3) and the other 4 bits determine the column index (between 0 - 15). Each element of S-box is a 4-bit value (between 0 - 15). Hence, the 48-bit $Y_n$ is converted to 8 6-bit values, which are used to index 8 S-box matrices to get 8 4-bit values. Hence the output of the S-box lookup is a 32-bit number. The S-box matrices are as given in the following figures.
 
 <p align="center">
@@ -197,8 +197,8 @@ Steps :
 4. Feistel stage 1 :
    - 4.1. $K_1$ = $KPermute_2(RotateLeftShift(K_{p1},1))$ ; // $K_1$ *is of 48-bit*
    - 4.2. $L_1 = R_0$
-   - 4.3. $R^*_0 = PTPerm_2(R_0)$ ; // $R_0$ *is permuted and extended from 32 to 48 bits in* $PTPerm_2$
-   - 4.4. $Y_0$ = $R^*_0 \oplus K_1$ ;
+   - 4.3. $R^1_0 = PTPerm_2(R_0)$ ; // $R_0$ *is permuted and extended from 32 to 48 bits in* $PTPerm_2$
+   - 4.4. $Y_0$ = $R^1_0 \oplus K_1$ ;
    - 4.5. $S_0 = Sbox(Y_0)$ ;
    - 4.6. $R_1 = L_0 \oplus S_0$ ;
 5. Other Feistel stages 2 - 16 computed similar to 4.
