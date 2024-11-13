@@ -28,14 +28,14 @@ These two aspects only leaves brute-force algorithm to break the ciphering.
 
 #### Flowchart :
 <p align="center">
-<img src=/home/tathagato/classes/2024_25/DSE1/DES-AES/DES-algorithm-flowchart.png
+<img src=./DES-algorithm-flowchart.png
 alt="Flowchart of DES algorithm">
 </p>
 
 The above picture shows the flowchart of the encryption algorithm. 16 48-bit subkeys are generated from a 64-bit key in a two-step process. The key generation is illustrated in the following figure.
 
 <p align="center">
-<img src=/home/tathagato/classes/2024_25/DSE1/DES-AES/des_key_gen.png
+<img src=./des_key_gen.png
 alt="Flowchart of DES algorithm">
 </p>
 
@@ -169,12 +169,12 @@ $$
 Each S-box is a 4X16 matrix. Let $R^*_{n}$ denote the permuted $R_n$, and $Y_n$ denote $R^*_n \oplus K_n$. For each 6-bit of $Y_n$, the first and last bit taken togther determines the row index (between 0 - 3) and the other 4 bits determine the column index (between 0 - 15). Each element of S-box is a 4-bit value (between 0 - 15). Hence, the 48-bit $Y_n$ is converted to 8 6-bit values, which are used to index 8 S-box matrices to get 8 4-bit values. Hence the output of the S-box lookup is a 32-bit number. The S-box matrices are as given in the following figures.
 
 <p align="center">
-<img src=/home/tathagato/classes/2024_25/DSE1/DES-AES/sbox_1_5.png
+<img src=./sbox_1_5.png
 alt="S-Box 1 to 5 of DES algorithm">
 </p>
 
 <p align="center">
-<img src=/home/tathagato/classes/2024_25/DSE1/DES-AES/sbox_6_8.png
+<img src=./sbox_6_8.png
 alt="S-box 6 to 8 of DES algorithm">
 </p>
 
